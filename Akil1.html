@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Akil1.css">
+    <title>Checkout</title>
+</head>
+<body>
+    <form action="Akil.html" method="post">
+
+    <div class="product_A_B">
+        <div class="Product_a">
+            <h3 style="text-align: center;">Product A</h3>
+            <div id="product_A_price_shipping">
+            <span>Price  -  RS 100/-</span><span id="shipp">Shipping  -  from RS 160/-</span></div>
+        <label  name="quantity">Qty - </label>
+        <input id ="Prod_a_qty" style="width: 40px;" name="quantity" type="number" placeholder="0" min="0">
+    </div>
+    
+    <div class="Product_b">
+        <h3 style="text-align: center;">Product B</h3>
+        <div id="product_A_price_shipping">
+        <span>Price  -  RS 200/-</span><span id="shipp">Shipping  -  from RS 60/-</span></div>
+    
+    <label  style=" text-align:center;"name="quantity">Qty - </label>
+    <input id ="Prod_b_qty" style="width: 40px;" name="quantity" type="number" placeholder="0" min="0">
+
+</div>
+</div>
+<br><br><br>
+<div class="personal_details" >
+    <h2 style="text-align: center;">Personal Details</h2><br>
+    <div class="form_container">
+     <div class="forM">
+    <label for="first">First Name</label>
+    <input id="first" type="text" placeholder="first name" required>
+    </div>
+    <div class="forM">
+    <label for="lasr">Last Name</label>
+    <input id="last" type="text" placeholder="last name" required>
+    </div>
+    <div class="forM">
+        <label for="Address">Address</label>
+        <input id="Address" type="textarea" placeholder="address lane 1" required>
+        <input id="Address" type="" placeholder="address lane 2">
+     </div>
+    <div class="forM">
+        <label for="pin">Pincode</label>
+        <input id="pin" type="number" required>
+        </div>
+        <div class="forM">
+            <label for="city">City</label>
+            <input id="city" type="text" placeholder="Chennai" required>
+            </div>
+            <div class="forM">
+                <label for="county">Country</label><br>
+                <select id="country" style="padding: 5px; width:100px" >
+                    <option value="India">India</option>
+                </select>
+                </div>
+    
+        <div class="forM">
+            <label for="email">Email ID</label>
+            <input id="email" type="email" placeholder="Akile@gmail.com" required>
+            </div>
+            <div class="forM">
+                <label for="tel">Phone NO.</label>
+                <input id="tel" type="tel" placeholder="XXX-XXX-XXXX" required>
+                </div>
+
+<input type="submit" value="submit" id="button_submit">
+               <!-- <button >SUBMIT</button> -->
+    </div>
+</form>
+</div>
+<script src="akil.js"></script>
+</body>
+</html>

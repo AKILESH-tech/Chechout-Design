@@ -1,0 +1,76 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+   
+}
+body{
+    background-image: linear-gradient(135deg,white,rgb(169, 169, 169));
+    background-repeat: no-repeat;
+}
+.product_A_B{
+    margin-top:30px ;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.Product_a{
+    background-color: rgb(231, 231, 231);
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    border: 2px solid none;
+    box-shadow:  1px 2px black ;
+}
+.Product_b{
+    background-color: rgb(231, 231, 231);
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    border: 2px solid none;
+    box-shadow:  1px 2px black ;
+}
+#product_A_price_shipping{
+    padding: 10px;
+}
+#shipp{
+    padding-left: 20px;
+}
+.form_container{
+    display: grid;
+    grid-template-columns: repeat(2,200px);
+    justify-self: center;
+    padding: 10px;
+}
+.personal_details{
+    display: grid;
+    border: 2px solid none;
+    box-shadow:  1px 2px black ;
+}
+
+    .forM{
+        padding: 20px;
+        font-size: large;
+
+    }
+.form_container input{
+    padding: 5px ;
+}
+#button_submit{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 15px;
+
+    padding-right: 15px;
+width:fit-content;
+justify-self: center;
+margin-left: 200px;
+margin-top: 15px;
+}

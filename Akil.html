@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display checkout</title>
+</head>
+<body>
+      <table border="2">
+        <tr align="center">
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email ID</th>
+          <th>Phone NO.</th>
+          <th>Total AMT.</th> 
+        </tr>
+        <tr>
+          <th id="display1">Akilesh</th>
+          <th id="display2">Parthasarathy</th>
+
+
+
+          <th id="display4">pakilesh2002@gmail.com</th>
+          <th id="display5">9176469709</th>
+          <th id="display3">RS 175/- </th>
+        </tr>
+        <tr>
+          <th id="display1">Akilesh</th>
+          <th id="display2">Parthasarathy</th>
+
+          
+
+          <th id="display4">pakilesh2002@gmail.com</th>
+          <th id="display5">9176469709</th>
+          <th id="display33">RS 290/-</th>
+        </tr>
+        <!-- <tr>
+          <th>First Name</th>
+          <th>First </th>
+          <th>First Name</th>
+          <th>First Name</th>
+          <th></th> 
+        </tr> -->
+        <br>
+        <br>
+        <br>
+        <h3>taxes</h3>
+       <p>CGST RATE - 10%      HGST RATE - 5%</p><br>
+       Total GST for product A is RS 15/- <br>
+       Total GST for product B is RS 30/-<br><br>
+       
+      </table>
+      <script>
+        const data1= localStorage.getItem("first");
+        const disdata = document.getElementById("display1");
+        disdata.textContent = data1;
+        const data2= localStorage.getItem("last");
+        const disdata = document.getElementById("display2");
+        disdata.textContent = data2;
+       
+        const data3= localStorage.getItem("email");
+        const disdata = document.getElementById("display4");
+        disdata.textContent = data3;
+        const data4= localStorage.getItem("tel");
+        const disdata = document.getElementById("display5");
+        disdata.textContent = data4;
+        <!-- const data5= localStorage.getItem("tot_A");
+        const disdata = document.getElementById("display3");
+        disdata.textContent = data5; -->
+        let price_a=100;
+        let price_b=200;
+        const shipping_charges=59;
+        const express_shipping = 89;
+        const cod = 49;
+        var cgst_A  = 100/10;;
+        var hgst_A = 100/20;
+        var cgst_B = 200/10;
+        var hgst_B = 200/20
+        let gst_A = cgst_A+hgst_A;
+        let gsts_B = cgst_B+hgst_B;
+        
+        let tot_A = price_a + shipping_charges + cgst_A;
+        let tot_B = price_b + shipping_charges + cgst_B;
+        document.getElementById("display3").innerHTML = tot_A;
+        document.getElementById("display33").innerHTML = tot_B;
+      </script>
+</body>
+</html>
